@@ -1,10 +1,16 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase {
 
+    @BeforeMethod
+    public void precondition() {
+        if (applicationManager.getUserhelper().isLoginRegistrationSuccess())
+            applicationManager.getUserhelper().logout();
+    }
 
     @Test
     public void loginSuccsess() {
@@ -31,11 +37,11 @@ public class LoginTests extends TestBase {
     @Test
     public void loginSuccessNew() {
         //open login registration form
-       applicationManager.getUserhelper().openLoginRegistrationform();
-       //fill form
-       applicationManager.getUserhelper().fillLogonRegistrationForm("bobik@gmail.com","Bobik12345$");
-       //click login button
-       applicationManager.getUserhelper().submitLogin();
+        applicationManager.getUserhelper().openLoginRegistrationform();
+        //fill form
+        applicationManager.getUserhelper().fillLogonRegistrationForm("bobik@gmail.com", "Bobik12345$");
+        //click login button
+        applicationManager.getUserhelper().submitLogin();
         Assert.assertTrue(applicationManager.getUserhelper().isLoginRegistrationSuccess());
     }
 }
