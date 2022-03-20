@@ -27,4 +27,7 @@ public class HelperBase {
     public boolean isElementPresent(By locator) {
         return wd.findElements(locator).size() > 0;
     }
+    public void logout(){
+        click(By.xpath("//*[text()='Sign Out']"));
+    }
 }
