@@ -11,7 +11,7 @@ public class ApplicationManager {
     public void init() {
         wd = new ChromeDriver();
         wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");
         userhelper = new UserHelper(wd);
     }

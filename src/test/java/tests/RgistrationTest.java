@@ -14,7 +14,7 @@ public class RgistrationTest extends TestBase {
 
     @Test
     public void registrationSuccess() {
-        int index = (int) System.currentTimeMillis();
+        int index = (int) (System.currentTimeMillis()/1000)%1000;
 
         applicationManager.getUserhelper().openLoginRegistrationform();
         applicationManager.getUserhelper().fillLogonRegistrationForm("bobik" + index + "@gmail.com", "Bobik12345$");
