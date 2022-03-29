@@ -15,6 +15,6 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-        applicationManager.stop();
+      //  applicationManager.stop();
     }
 }

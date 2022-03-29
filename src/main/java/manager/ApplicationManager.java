@@ -8,12 +8,15 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     WebDriver wd;
     UserHelper userhelper;
+    ContactHelper contact;
+
     public void init() {
         wd = new ChromeDriver();
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");
         userhelper = new UserHelper(wd);
+        contact = new ContactHelper(wd);
     }
 
     public void stop() {
@@ -23,4 +26,9 @@ public class ApplicationManager {
     public UserHelper getUserhelper() {
         return userhelper;
     }
+
+    public ContactHelper contact() {
+        return contact;
+    }
+
 }

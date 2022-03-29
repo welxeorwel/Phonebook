@@ -11,6 +11,7 @@ public class HelperBase {
         this.wd = wd;
 
     }
+
     public void type(By locator, String text) {
         if (text != null) {
             WebElement element = wd.findElement(locator);
@@ -27,7 +28,15 @@ public class HelperBase {
     public boolean isElementPresent(By locator) {
         return wd.findElements(locator).size() > 0;
     }
-    public void logout(){
+
+    public void logout() {
         click(By.xpath("//*[text()='Sign Out']"));
+    }
+    public void pause(int mSec) {
+        try {
+            Thread.sleep(mSec);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
