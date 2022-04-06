@@ -64,4 +64,10 @@ public class UserHelper extends HelperBase {
         return error.contains("Wrong email or password format");
 
     }
+    public void login(User user){
+
+        openLoginRegistrationform();
+        fillLogonRegistrationForm(user.getEmail(), user.getPassword());
+        submitLogin();
+            }
 }

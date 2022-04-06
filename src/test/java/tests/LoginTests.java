@@ -13,8 +13,8 @@ public class LoginTests extends TestBase {
             applicationManager.getUserhelper().logout();
     }
 
-    @Test
-    public void loginSuccsess() {
+  //  @Test
+    //public void loginSuccsess() {
 //        //open login form
 //         WebElement loginItem = wd.findElement(By.cssSelector("[href='/login']"));
 //        loginItem.click();
@@ -33,7 +33,7 @@ public class LoginTests extends TestBase {
 //        //assert
 //        Assert.assertTrue(wd.findElements(By.xpath("//*[text()='Sign Out']")).size() > 0);
 //
-    }
+   // }
 
     @Test
     public void loginSuccessNew() {

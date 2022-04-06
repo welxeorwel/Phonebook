@@ -3,6 +3,9 @@ package manager;
 import models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -10,7 +13,7 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
-    public void openContactForm(){
+    public void openContactForm() {
         click(By.cssSelector(".navbar-logged_nav__2Hx7M a:nth-child(5)"));
     }
 
@@ -24,11 +27,30 @@ public class ContactHelper extends HelperBase {
 
 
     }
-    public void pushSaveButton(){
+
+    public void pushSaveButton() {
         click(By.xpath("//*[text()='Save']"));
     }
+
+    public boolean isContactByName(String name) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h2"));
+        for (WebElement el : list) {
+            if (el.getText().equals(name))
+                return true;
+        }
+        return false;
+    }
+
+    public boolean isContactByPhone(String phone) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h3"));
+        for (WebElement el : list) {
+        if(el.getText().equals(phone))
+            return true;
+        }
+        return false;
+    }
     //public boolean contactCreateSuccessfully(Contact contact){
-      //  String phone = contact.getPhone();
+    //  String phone = contact.getPhone();
 //return isElementPresent(By.xpath("//*[text()='']"))
 
 }
