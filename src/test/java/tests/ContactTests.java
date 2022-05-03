@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.Contact;
 import models.User;
 import org.testng.Assert;
@@ -33,6 +34,17 @@ public class ContactTests extends TestBase {
 //        applicationManager.contact().contactCreateSuccessfully(cont);
         Assert.assertTrue(applicationManager.contact().isContactByName(cont.getName()));
         Assert.assertTrue(applicationManager.contact().isContactByPhone(cont.getPhone()));
+
+    }
+
+    @Test(dataProvider = "validDataContact", dataProviderClass = MyDataProvider.class)
+    public void addNewContactSuccsessDataProviderCSV(Contact contact){
+
+        applicationManager.contact().openContactForm();
+        applicationManager.contact().fillContactForm(contact);
+        applicationManager.contact().pushSaveButton();
+        Assert.assertTrue(applicationManager.contact().isContactByName(contact.getName()));
+        Assert.assertTrue(applicationManager.contact().isContactByPhone(contact.getPhone()));
 
     }
 

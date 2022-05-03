@@ -1,0 +1,67 @@
+1929 [Test worker] INFO  manager.ApplicationManager - test starts in chrome driver
+2822 [Test worker] INFO  tests.TestBase - Start test --->loginModelDataPrividerCSV
+2824 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+4889 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+4891 [Test worker] INFO  tests.TestBase - Tests start with email : bobik@gmail.comand password : Bobik12345$
+4891 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.cssSelector: [href='/login']
+4910 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.cssSelector: [href='/login'] was found
+4947 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[1]
+4958 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[1] was found
+5028 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[2]
+5036 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[2] was found
+5102 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()=' Login']
+5112 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()=' Login'] was found
+5133 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+5837 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+5839 [Test worker] INFO  tests.TestBase - test passed
+5840 [Test worker] INFO  tests.TestBase - Start test --->loginModelDataPrividerCSV
+5841 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+5848 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+5848 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+5857 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+5879 [Test worker] INFO  tests.TestBase - Tests start with email : bobik@gmail.comand password : Bobik12345$
+5879 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.cssSelector: [href='/login']
+5886 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.cssSelector: [href='/login'] was found
+5907 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[1]
+5914 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[1] was found
+5972 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[2]
+5978 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[2] was found
+6037 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()=' Login']
+6043 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()=' Login'] was found
+6063 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6194 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6195 [Test worker] INFO  tests.TestBase - test passed
+6195 [Test worker] INFO  tests.TestBase - Start test --->loginModelDataPrividerCSV
+6196 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6202 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6202 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6208 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6233 [Test worker] INFO  tests.TestBase - Tests start with email : bobik@gmail.comand password : Bobik12345$
+6234 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.cssSelector: [href='/login']
+6244 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.cssSelector: [href='/login'] was found
+6266 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[1]
+6272 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[1] was found
+6333 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[2]
+6340 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[2] was found
+6396 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()=' Login']
+6403 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()=' Login'] was found
+6423 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6554 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6554 [Test worker] INFO  tests.TestBase - test passed
+6555 [Test worker] INFO  tests.TestBase - Start test --->loginModelDataPrividerCSV
+6555 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6562 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6562 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6568 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6588 [Test worker] INFO  tests.TestBase - Tests start with email : bobik@gmail.comand password : Bobik12345$
+6588 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.cssSelector: [href='/login']
+6595 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.cssSelector: [href='/login'] was found
+6616 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[1]
+6624 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[1] was found
+6681 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[2]
+6686 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[2] was found
+6744 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()=' Login']
+6752 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()=' Login'] was found
+6771 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+6893 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+6894 [Test worker] INFO  tests.TestBase - test passed

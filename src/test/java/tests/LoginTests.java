@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +14,7 @@ public class LoginTests extends TestBase {
             applicationManager.getUserhelper().logout();
     }
 
-  //  @Test
+    //  @Test
     //public void loginSuccsess() {
 //        //open login form
 //         WebElement loginItem = wd.findElement(By.cssSelector("[href='/login']"));
@@ -33,28 +34,31 @@ public class LoginTests extends TestBase {
 //        //assert
 //        Assert.assertTrue(wd.findElements(By.xpath("//*[text()='Sign Out']")).size() > 0);
 //
-   // }
+    // }
 
-    @Test
-    public void loginSuccessNew() {
+    @Test(dataProvider = "validLoginData", dataProviderClass = MyDataProvider.class)
+    public void loginSuccessNew(String email, String password) {
+        logger.info("test starts with email:" + email + " password:" + password);
         //open login registration form
         applicationManager.getUserhelper().openLoginRegistrationform();
         //fill form
-        applicationManager.getUserhelper().fillLogonRegistrationForm("bobik@gmail.com", "Bobik12345$");
+        applicationManager.getUserhelper().fillLogonRegistrationForm(email, password);
         //click login button
         applicationManager.getUserhelper().submitLogin();
         Assert.assertTrue(applicationManager.getUserhelper().isLoginRegistrationSuccess());
     }
+
     @Test
-    public void loginSuccessModel(){
+    public void loginSuccessModel() {
         User user = new User().withEmail("bobik@gmail.com").withPassword("Bobik12345$");
         applicationManager.getUserhelper().openLoginRegistrationform();
         applicationManager.getUserhelper().fillLogonRegistrationForm(user);
         applicationManager.getUserhelper().submitLogin();
         Assert.assertTrue(applicationManager.getUserhelper().isLoginRegistrationSuccess());
     }
+
     @Test
-    public void loginNegativePass(){
+    public void loginNegativePass() {
         User user = new User().withEmail("bobik@gmail.com").withPassword("bobik");
         applicationManager.getUserhelper().openLoginRegistrationform();
         applicationManager.getUserhelper().fillLogonRegistrationForm(user);
@@ -62,5 +66,17 @@ public class LoginTests extends TestBase {
         Assert.assertFalse(applicationManager.getUserhelper().isLoginRegistrationSuccess());
         Assert.assertTrue(applicationManager.getUserhelper().isAlertDispalyed());
         Assert.assertTrue(applicationManager.getUserhelper().isErrorWrongFormat());
+    }
+    @Test (dataProvider = "validLoginData",dataProviderClass = MyDataProvider.class)
+    public void loginModelDataPrividerCSV(String email, String password){
+
+        logger.info("Tests start with email : "+email+"and password : "+password);
+
+        applicationManager.getUserhelper().openLoginRegistrationform();
+        applicationManager.getUserhelper().fillLogonRegistrationForm(email,password);
+        applicationManager.getUserhelper().submitLogin();
+
+        Assert.assertTrue(applicationManager.getUserhelper().isLoginRegistrationSuccess());
+        logger.info("test passed");
     }
 }

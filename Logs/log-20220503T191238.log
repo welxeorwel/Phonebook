@@ -1,0 +1,34 @@
+2543 [Test worker] INFO  manager.ApplicationManager - Tests start in ChromeDriver
+9531 [Test worker] INFO  tests.TestBase - Start test --->addNewContactSuccsessDataProviderCSV
+9532 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
+11611 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()='Sign Out'] was found
+11612 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.cssSelector: [href='/login']
+11622 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.cssSelector: [href='/login'] was found
+11655 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[1]
+11667 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[1] was found
+11730 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //input[2]
+11738 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //input[2] was found
+11803 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()=' Login']
+11811 [Test worker] INFO  manager.MyListener - 'The element with locator' -->By.xpath: //*[text()=' Login'] was found
+11838 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.cssSelector: .navbar-logged_nav__2Hx7M a:nth-child(5)
+13856 [Test worker] INFO  manager.MyListener - We have a problem-->no such element: Unable to locate element: {"method":"css selector","selector":".navbar-logged_nav__2Hx7M a:nth-child(5)"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HKMJNMU', ip: '10.0.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\welxeor\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f2f5ccf5bb68d62be339c6cea115715
+*** Element info: {Using=css selector, value=.navbar-logged_nav__2Hx7M a:nth-child(5)}
+13856 [Test worker] INFO  manager.MyListener - We have a problem-->org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-logged_nav__2Hx7M a:nth-child(5)"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HKMJNMU', ip: '10.0.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\welxeor\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f2f5ccf5bb68d62be339c6cea115715
+*** Element info: {Using=css selector, value=.navbar-logged_nav__2Hx7M a:nth-child(5)}
+14417 [Test worker] INFO  manager.MyListener - This is the link to screen with problem -->src/test/screenshots/screen-458776.png
+14420 [Test worker] INFO  tests.TestBase - Start test --->addNewContactSuccsessDataProviderCSV
+14420 [Test worker] INFO  manager.MyListener - 'Start find' element ---> By.xpath: //*[text()='Sign Out']
